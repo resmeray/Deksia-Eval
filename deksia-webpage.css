@@ -1,0 +1,642 @@
+/*
+    Rebecca Arango
+    Deksia Eval Webpage Styles
+    11/25/2020
+*/
+
+/*REFERENCE STYLES*/
+*
+{
+    margin: 0;
+    --mainblue: rgba(22, 84, 168, 100%);
+    --accentblue: rgba(184, 223, 246, 1);
+    --accentgrey:  rgba(242, 242, 242, 1);
+    --accentyellow: rgba(251, 229, 51, 1);
+}
+
+/*ALL STYLES*/
+/*H1. Text & Spacing*/
+.h1-header h1
+{
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--mainblue);
+    font-size: 30px;
+    margin: 0 0 40px 0;
+}
+/*Centered H1 Styles*/
+.h1-center h1
+{
+    text-align: center;
+    width: 40%;
+    margin: 50px auto;
+}
+/*H2. Text & Spacing*/
+.h2-header h2
+{
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--mainblue);
+    font-size: 20px;
+    margin: 0 0 40px 0;
+}
+/*H3. Text & Spacing*/
+.h3-header h3
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin: 0 0 10px 0;
+}
+/*Regular Text & Spacing*/
+.p-text p
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12.5px;
+    line-height: 20px;
+    margin: 0 0 20px 0;
+}
+/*Regular List Text & Spacing*/
+.p-text li
+{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12.5px;
+    margin: 0 0 5px 0;
+}
+.p-text ul
+{
+    margin: 0 0 20px 0;
+}
+/*Styles for image + text boxes.*/
+.two-col-box
+{
+    display: grid;
+    grid-template-columns: 20% 80%;  
+}
+/*Grey Box*/
+.box-grey
+{
+    background-color: var(--accentgrey);
+}
+/*Blue Box*/
+.box-blue
+{
+    background-color: var(--accentblue);
+}
+/*Round Edges Box*/
+.round-edges
+{
+    border-radius: 10px;
+}
+/*Center content along its vertical axis.*/
+.vertical-center
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*Add a soft shadow gradient to a bar/section.*/
+.bottom-shadow
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+}
+/*Align content along the right side of the page.*/
+.right-align
+{
+    display: flex;
+    justify-content: flex-end;
+}
+/*For text in little boxes and along first grey information bar.*/
+.little-box-text
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+/*Button Styles*/
+.button p
+{
+    color: var(--accentblue);
+    margin: 5px 0;    
+}
+.button
+{
+    background-color: var(--mainblue);
+    width: 90px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*Change li elements into a menu.*/
+.menu-links li
+{
+    display: inline;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12.5px;
+}
+/*Yellow Border*/
+.yellow-border
+{
+    width: 100%;
+    height: 15px;
+    background-color: var(--accentyellow);
+}
+
+
+/*UPPER MENU*/
+/*Upper Menu size & layout.*/
+.top-menu
+{
+    width: 100%;
+    height: 148px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*Resize logo image*/
+.logo
+{
+    width: 148px;
+}
+/*Spacing around search icon and menu items.*/
+.search-menu-wrapper
+{
+    padding: 30px 0 0 0;
+}
+/*Sizing and spacing of search icon.*/
+.search
+{
+    width: 22px;
+    margin: 0 15px 15px 0;
+}
+/*Color and spacing for menu links*/
+.top-menu-links li
+{
+    color: var(--mainblue);
+    margin: 0 20px 20px 0;
+}
+/*Menu carrot styles*/
+
+
+/*SUB MENU*/
+/*Section size, spacing, and styles.*/
+.sub-menu
+{
+    background-color: var(--mainblue);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(167, 48, 48, 0.25));
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/*Center the sub menu links*/
+.sub-menu ul
+{
+    text-align: center;
+}
+/*sub menu link color + spacing.*/
+.sub-menu li
+{
+    color: var(--accentblue);
+    margin: 0 20px 20px 0;
+}
+
+/*BIG PICTURE #1*/
+/*Allow text to be positioned onto picture.*/
+.big-picture
+{
+    position: relative;
+    text-align: center;   
+}
+/*Position text on the image, center its content, and add a white gradient.*/
+.big-picture-text-wrapper
+{
+   position: absolute;
+   top: 50%;
+   left: 30%;
+   transform: translate(-50%, -50%);
+   background-image: linear-gradient(to right, rgba(255,255,255,1) 40%, rgba(255,255,255,0));
+   height: 98%;
+   width: 60%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/*Left-align, spacing, and sizing of text items.*/
+.big-picture-text h3, .big-picture-text h1, .big-picture-text>p
+{
+    text-align: left;
+    margin: 0 0 10px 0;
+    width: 350px;
+}
+
+/*GREY INFORMATION BAR*/
+/*Space out text elements and dividers accordingly.*/
+.grey-bar-text-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+/*Center each of the text items and dividers.*/
+.grey-bar-text-wrapper>div
+{
+    align-items: center;
+}
+/*Add styles to the text.*/
+.grey-bar-text p
+{
+    color: var(--mainblue);
+    font-weight: bold;
+    margin: 0;
+}
+/*Place pictures right next to text.*/
+.grey-bar-text-grid
+{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 20px;
+}
+/*Resize little images.*/
+.grey-bar-image
+{
+    width: 40px;
+    
+}
+/*Center the information on the whole bar.*/
+.grey-bar ul
+{
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+/*Add appropriate styles to the text.*/
+.grey-bar li
+{
+    color: var(--mainblue);
+    padding: 0 10px 0 10px;
+}
+/*Create divider lines.*/
+.divider
+{
+    width: 1px;
+    height: 30px;
+    background-color: var(--mainblue);
+}
+
+
+/*EXAMPLE TEXT STYLES/WHITE SPACE*/
+
+.example-text-grid
+{
+    display: grid;
+    grid-template-columns: 47.2% 5% 47.2%;
+    width: 70%;
+    margin: 50px auto;
+}
+.example-text-grid div
+{
+    text-align: left;
+    margin: 0 auto;
+}
+
+/*YELLOW BAR*/
+.yellow-bar
+{
+    width: 70%;
+    background-color: var(--accentyellow);
+    height: 5px;
+    margin: 0 auto;
+}
+
+/*BENEFITS OF NATURAL GAS*/
+/*Add space to bottom of section.*/
+.benefits-section
+{
+    margin-bottom: 60px;
+}
+/*Define 2x2 grid and size of grid for benefits boxes.*/
+.benefits-grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 0 auto;
+    width: 70%;
+}
+/*Add special styles to content within boxes.*/
+.benefits-grid-item
+{
+    column-gap: 25px;
+    padding: 30px 30px 30px 0;
+}
+/*Add color an spacing to h3 text in boxes.*/
+.benefits-grid-item h3
+{
+    color: var(--mainblue);
+    margin: 0 0 5px 0;
+}
+/*Correctly align the picture in the boxes.*/
+.benefits-grid-item-picture-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+/*Resize the picture.*/
+.benefits-grid-item-picture
+{
+    width: 50%;
+}
+
+
+/*BIG PICTURE #2*/
+.two-big-picture
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*NATURAL GAS SERVICE AREA SECTION*/
+/*Define 2 column grid for section.*/
+.natural-gas-section-grid
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 70%;
+    margin: 0 auto 50px auto;
+}
+/*Add special space between text and and other services section.*/
+#bottom-space
+{
+    margin: 0 0 50px 0;
+}
+/*Create a 2x2 grid for other services box and add special spacing.*/
+.other-service-box-grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 70%;
+    margin: 0 0 40px 0;
+}
+/*Add special spacing for other service little box.*/
+.other-service-box
+{
+    padding: 5px 15px;
+    column-gap: 15px;
+}
+/*Add special styles for text in little boxes.*/
+.other-service-box p
+{
+    color: var(--mainblue);
+    margin: 0;
+}
+
+
+/*GREY FAMILY SECTION*/
+/*Add color to section*/
+.grey-family-section
+{
+    background-color: var(--accentgrey);
+}
+/*Adjust bottom spacing for h2 text.*/
+.grey-family-section h2
+{
+    margin: 0 0 10px 0;
+}
+/*Define 2 column grid for family.*/
+.grey-family-section-grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 70%;
+    margin: 0 auto;
+    column-gap: 30px;
+}
+/*Spacing around picture of family.*/
+.grey-family-section-picture
+{
+    width: 100%;
+    margin: 50px 0; 
+}
+
+
+/*FIXED RATE SECTION*/
+/*Define a 2x2 grid for the section and add spacing.*/
+.fixed-rate-section
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    width: 70%;
+    margin: 60px auto 0 auto;
+    column-gap: 50px;
+    row-gap: 50px;
+}
+/*Add styles for h3*/
+.fixed-rate-section h3
+{
+    color: var(--mainblue);
+}
+/*Add spacing for each variable rate box.*/
+.fixed-rate-item
+{
+    padding: 30px;
+}
+/*FIXED RATE SECTION GRAPH*/
+/*add bottom spacing underneath graph.*/
+.graph-wrapper
+{
+    margin: 0 0 50px 0;
+}
+/*Define graph confines.*/
+.graph
+{
+    width: 50%;
+    height: 150px;
+    margin: 50px auto 10px auto;
+    background-color: var(--accentgrey);
+
+}
+/*Add styles to paragraph.*/
+.graph-wrapper p
+{
+    font-weight: bold;
+    margin: 0 0 0 25%;
+}
+/*Variable Key color*/
+.variable-key
+{
+    color: var(--mainblue);
+}
+/*Fixed Key color*/
+.fixed-key
+{
+    color: var(--accentblue);
+}
+
+
+/*TESTIMONIALS*/
+/*Resizing image.*/
+.portrait img
+{
+    width: 70%;
+    margin: 0 auto;
+}
+/*Sizing quote area.*/
+.quote
+{
+    width: 90%;
+}
+/*Quote text styles.*/
+.quote p
+{
+    color: var(--mainblue);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 25px;
+}
+/*Quote credit styles.*/
+#quote-credit
+{
+    color: rgba(80, 80, 80, 1);
+    font-weight: bold;
+}
+/*Define bigger grid with carrots and testimonial section.*/
+.testimonial-wrapper-grid
+{
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+/*Define grid area within testimonial section, within and excluding carrots.*/
+.testimonials-grid
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+}
+/*Carrot styles.*/
+.carrot p
+{
+    color: white;
+    font-size: 30px;
+    
+}
+.carrot-left
+{
+    justify-content: flex-end;
+}
+
+/*FAQ SECTION*/
+/*Create grid for FAQ section*/
+.FAQ-section
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+/*Create FAQ categories*/
+.FAQ-categories
+{
+    margin: 40px 0 0 200px;
+    padding: 0 40px 0 0;
+}
+/*FAQ H1 styles*/
+.FAQ-section h1
+{
+    color: var(--mainblue);
+}
+/*Drop down question section styles.*/
+.drop-down-question
+{
+    background-color: rgba(230, 230, 230, 0.4);
+    padding: 40px;
+}
+.drop-down-spacing
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Blue Drop widgets*/
+.drop-widget
+{
+    background-color: var(--mainblue);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    margin-right: 200px;
+}
+/*Answer to show*/
+.FAQ-answer
+{
+    display: none;
+    margin-right: 20px;
+    width: 50%;
+}
+
+/*BLUE BORDER*/
+.blue-border
+{
+    height: 25px;
+    background-color: var(--mainblue);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25));
+}
+
+
+/*FOOTER*/
+/*Defining spacing within the footer.*/
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/*Set H3 color in the footer.*/
+.footer h3
+{
+    color: var(--mainblue);
+}
+/*Layout of socials icons*/
+.socials 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.socials-space
+{
+    margin: 0 10px 0 0;
+}
+
+/*Spacing around socials and text. */
+.footer-links
+{
+    margin: 30px 30px 0 0;
+    text-align: right;
+}
+/*Spacing around and between text.*/
+.footer-text
+{
+    margin-top: 75px;
+}
+.footer-text h3
+{
+    margin-bottom: 20px;
+}
